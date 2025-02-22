@@ -1,0 +1,27 @@
+@import "tailwindcss";
+
+.popup-background {
+  background-size: cover;
+  background-position: center;
+  filter: blur(8px);
+}
+
+:root {
+  --bg-dark: #212121;
+  --text-dark: #fff;
+  --bg-light: #fff;
+  --text-light: #5a5a5a;
+  --heading-color: #000; 
+}
+
+.dark {
+  --bg-light: var(--bg-dark);
+  --text-light: var(--text-dark);
+  --heading-color: #000;
+}
+
+body {
+  background-color: var(--bg-light);
+  color: var(--text-light);
+  transition: background-color 0.3s, color 0.3s;
+}
