@@ -1,18 +1,585 @@
 {
   "cities": [
-    "Асбест",
-    "Сургут",
-    "Златоуст",
-    "Каменск-Уральский",
-    "Копейск",
-    "Курган",
-    "Магнитогорск",
-    "Миасс",
-    "Нефтеюганск",
-    "Нижневартовск",
-    "Нижний Тагил",
-    "Новоуральск",
-    "Новый Уренгой",
-    "Ноябрьск"
+    {
+      "id": "1",
+      "name": "Ноябрьск"
+    },
+    {
+      "id": "2",
+      "name": "Асбест"
+    },
+    {
+      "id": "3",
+      "name": "Сургут"
+    },
+    {
+      "id": "4",
+      "name": "Златоуст"
+    },
+    {
+      "id": "5",
+      "name": "Каменск-Уральский"
+    },
+    {
+      "id": "6",
+      "name": "Копейск"
+    },
+    {
+      "id": "7",
+      "name": "Курган"
+    },
+    {
+      "id": "8",
+      "name": "Магнитогорск"
+    },
+    {
+      "id": "9",
+      "name": "Миасс"
+    },
+    {
+      "id": "10",
+      "name": "Нефтеюганск"
+    },
+    {
+      "id": "11",
+      "name": "Нижневартовск"
+    },
+    {
+      "id": "12",
+      "name": "Нижний Тагил"
+    },
+    {
+      "id": "13",
+      "name": "Новоуральск"
+    },
+    {
+      "id": "14",
+      "name": "Новый Уренгой"
+    }
+  ],
+  "users": [],
+  "vacancies": [
+    {
+      "id": "1",
+      "title": "Грузчик г. Москва",
+      "salary": 2500,
+      "description": "Работа в Зонах приемки / отгрузки товаров. Сортировка, пересчет, маркировка, раскладка, отгрузка товаров. Опыт работы на складах приветствуется. Отсутствие противопоказаний к активной, подвижной работе. Аккуратность, внимательность, ответственность, дисциплинированность, активность, обучаемость.",
+      "requirements": "Физическая выносливость. Готовность к работе с тяжестями до 30 кг. Отсутствие медицинских противопоказаний. Ответственный подход к работе. Желательно наличие медицинской книжки.",
+      "conditions": "График работы: сменный 2/2, 5/2 или вахтовый метод. Официальное трудоустройство по ТК РФ. Своевременная оплата труда. Спецодежда предоставляется. Возможность карьерного роста. Работа на современном складском комплексе."
+    },
+    {
+      "id": "2",
+      "title": "Грузчик г. Омск",
+      "salary": 2100,
+      "description": "Работа в Зонах приемки / отгрузки товаров. Сортировка, пересчет, маркировка, раскладка, отгрузка товаров. Опыт работы на складах приветствуется. Отсутствие противопоказаний к активной, подвижной работе. Аккуратность, внимательность, ответственность, дисциплинированность, активность, обучаемость.",
+      "requirements": "Готовность к физическому труду. Умение работать в команде. Внимательность при проверке товара. Опыт складской работы будет преимуществом. Дисциплинированность и пунктуальность.",
+      "conditions": "Сменный график работы. Оформление согласно ТК РФ. Выплата заработной платы без задержек. Обеспечение рабочей одеждой. Комфортные условия труда. Дружный коллектив. Возможность дополнительных смен."
+    },
+    {
+      "id": "3",
+      "title": "Водитель на Газель",
+      "salary": 2700,
+      "description": "Работа в Зонах приемки / отгрузки товаров. Сортировка, пересчет, маркировка, раскладка, отгрузка товаров. Опыт работы на складах приветствуется. Отсутствие противопоказаний к активной, подвижной работе. Аккуратность, внимательность, ответственность, дисциплинированность, активность, обучаемость.",
+      "requirements": "Водительские права категории B. Опыт вождения от 2 лет. Знание города и области. Аккуратное вождение, бережное отношение к транспортному средству. Опыт работы с сопроводительной документацией. Отсутствие вредных привычек.",
+      "conditions": "Стабильная занятость. Грузовой автомобиль Газель в хорошем состоянии. Техническое обслуживание за счет компании. Корпоративная мобильная связь. Оплата ГСМ. Возможность подработки. Дружный коллектив. Официальное трудоустройство."
+    }
+  ],
+  "prices": [
+    {
+      "id": "1",
+      "service": "Грузчики на час",
+      "price_without_discount": 350,
+      "price_with_discount": 250,
+      "description": "Профессиональные грузчики помогут с переездом, аккуратно упакуют и перенесут вещи, чтобы избежать повреждений.",
+      "icon": ""
+    },
+    {
+      "id": "2",
+      "service": "Автопарк",
+      "price_without_discount": 350,
+      "price_with_discount": 250,
+      "description": "Оптимальный вариант для переезда или перевозки крупных грузов: трое грузчиков и вместительная ГАЗель.",
+      "icon": ""
+    },
+    {
+      "id": "3",
+      "service": "Такелаж",
+      "price_without_discount": 500,
+      "price_with_discount": 400,
+      "description": "Специалисты по такелажным работам — поднимут и переместят тяжёлые грузы, сейфы, станки, банкоматы и прочее.",
+      "icon": ""
+    },
+    {
+      "id": "4",
+      "service": "Квартирный переезд",
+      "price_without_discount": 400,
+      "price_with_discount": 300,
+      "description": "Помощь в сборке, разборке и перемещении мебели. Осторожный подход и профессиональные инструменты.",
+      "icon": ""
+    },
+    {
+      "id": "5",
+      "service": "Дачный переезд",
+      "price_without_discount": 400,
+      "price_with_discount": 300,
+      "description": "Погрузка и разгрузка строительных материалов: кирпич, цемент, арматура, гипсокартон и прочее.",
+      "icon": ""
+    },
+    {
+      "id": "6",
+      "service": "Офисный переезд",
+      "price_without_discount": 300,
+      "price_with_discount": 200,
+      "description": "Опытные разнорабочие для мелких строительных и подсобных работ: уборка территории, демонтаж, помощь на стройке.",
+      "icon": ""
+    },
+    {
+      "id": "7",
+      "service": "Вывоз мусора",
+      "price_without_discount": 500,
+      "price_with_discount": 400,
+      "description": "Услуги по перевозке грузов по городу и области. Быстро, безопасно, недорого.",
+      "icon": ""
+    },
+    {
+      "id": "8",
+      "service": "Уборка снега",
+      "price_without_discount": 1600,
+      "price_with_discount": 1600,
+      "description": "Профессиональная упаковка вещей, мебели, техники и товаров для транспортировки и хранения.",
+      "icon": ""
+    },
+    {
+      "id": "9",
+      "service": "Перевозка вещей",
+      "price_without_discount": 500,
+      "price_with_discount": 400,
+      "description": "Контроль груза в пути, оформление документов и сопровождение доставки от отправителя до получателя.",
+      "icon": ""
+    },
+    {
+      "id": "10",
+      "service": "Переезд с грузчиками",
+      "price_without_discount": 400,
+      "price_with_discount": 300,
+      "description": "Грузчики для офисных переездов, архивов, складов и предприятий. Аккуратность и пунктуальность гарантированы.",
+      "icon": ""
+    }
+  ],
+  "news": [
+    {
+      "id": "1",
+      "title": null,
+      "text": "Разбираем, собираем мебель. Укажите данную услугу при составлении заявки и грузчики выполнят все необходимые работы. Наши специалисты имеют многолетний опыт такелажных работ и обеспечены всем необходимым инструментом. Мы гарантируем бережное обращение с вашей мебелью и имуществом.",
+      "img": "newsimg.png",
+      "date": "27.04.2025",
+      "views": 349
+    }
+  ],
+  "pricesFull": [
+    {
+      "id": "1",
+      "service": "Вывоз мусора",
+      "price_without_discount": 400,
+      "price_with_discount": 300,
+      "description": "Рассчитать стоимость переезда с грузчиками в Екатеринбурге",
+      "img": "https://ik.imagekit.io/l1q0yhfbyy/Dominant/Prices/garbageRemove.png?updatedAt=1747044533026"
+    },
+    {
+      "id": "2",
+      "service": "Такелажные работы",
+      "price_without_discount": 400,
+      "price_with_discount": 300,
+      "description": "Рассчитать стоимость переезда с грузчиками в Екатеринбурге",
+      "img": "https://ik.imagekit.io/l1q0yhfbyy/Dominant/Prices/rigging.png?updatedAt=1747044529680"
+    },
+    {
+      "id": "3",
+      "service": "Офисный переезд",
+      "price_without_discount": 400,
+      "price_with_discount": 300,
+      "description": "Рассчитать стоимость переезда с грузчиками в Екатеринбурге",
+      "img": "https://ik.imagekit.io/l1q0yhfbyy/Dominant/Prices/officeMove.png?updatedAt=1747044533904"
+    },
+    {
+      "id": "4",
+      "service": "Квартирный переезд",
+      "price_without_discount": 400,
+      "price_with_discount": 300,
+      "description": "Рассчитать стоимость переезда с грузчиками в Екатеринбурге",
+      "img": "https://ik.imagekit.io/l1q0yhfbyy/Dominant/Prices/apartamentMove.png?updatedAt=1747044529224"
+    },
+    {
+      "id": "5",
+      "service": "Перевозка пианино",
+      "price_without_discount": 400,
+      "price_with_discount": 300,
+      "description": "Рассчитать стоимость переезда с грузчиками в Екатеринбурге",
+      "img": "https://ik.imagekit.io/l1q0yhfbyy/Dominant/Prices/pianoTransoprtation.png?updatedAt=1747044529792"
+    },
+    {
+      "id": "6",
+      "service": "Разнорабочие",
+      "price_without_discount": 400,
+      "price_with_discount": 300,
+      "description": "Рассчитать стоимость переезда с грузчиками в Екатеринбурге",
+      "img": "https://ik.imagekit.io/l1q0yhfbyy/Dominant/Prices/labourers.png?updatedAt=1747044533339"
+    },
+    {
+      "id": "7",
+      "service": "Подъем стройматериалов",
+      "price_without_discount": 400,
+      "price_with_discount": 300,
+      "description": "Рассчитать стоимость переезда с грузчиками в Екатеринбурге",
+      "img": "https://ik.imagekit.io/l1q0yhfbyy/Dominant/Prices/buildingMaterials.png?updatedAt=1747044528736"
+    },
+    {
+      "id": "8",
+      "service": "Дачный переезд",
+      "price_without_discount": 400,
+      "price_with_discount": 300,
+      "description": "Рассчитать стоимость переезда с грузчиками в Екатеринбурге",
+      "img": "https://ik.imagekit.io/l1q0yhfbyy/Dominant/Prices/dachaMoving.png?updatedAt=1747044529487"
+    },
+    {
+      "id": "9",
+      "service": "Уборка территории",
+      "price_without_discount": 400,
+      "price_with_discount": 300,
+      "description": "Рассчитать стоимость переезда с грузчиками в Екатеринбурге",
+      "img": "https://ik.imagekit.io/l1q0yhfbyy/Dominant/Prices/territoryCleaning.png?updatedAt=1747044529388"
+    },
+    {
+      "id": "10",
+      "service": "Уборка снега",
+      "price_without_discount": 400,
+      "price_with_discount": 300,
+      "description": "Рассчитать стоимость переезда с грузчиками в Екатеринбурге",
+      "img": "https://ik.imagekit.io/l1q0yhfbyy/Dominant/Prices/snowCleaning.png?updatedAt=1747044529763"
+    },
+    {
+      "id": "11",
+      "service": "Упаковка",
+      "price_without_discount": 400,
+      "price_with_discount": 300,
+      "description": "Рассчитать стоимость переезда с грузчиками в Екатеринбурге",
+      "img": "https://ik.imagekit.io/l1q0yhfbyy/Dominant/Prices/package.png?updatedAt=1747044534362"
+    },
+    {
+      "id": "12",
+      "service": "Сборка мебели",
+      "price_without_discount": 400,
+      "price_with_discount": 300,
+      "description": "Рассчитать стоимость переезда с грузчиками в Екатеринбурге",
+      "img": "https://ik.imagekit.io/l1q0yhfbyy/Dominant/Prices/furnitureAssembly.png?updatedAt=1747044533082"
+    },
+    {
+      "id": "13",
+      "service": "Экспидирование",
+      "price_without_discount": 400,
+      "price_with_discount": 300,
+      "description": "Рассчитать стоимость переезда с грузчиками в Екатеринбурге",
+      "img": "https://ik.imagekit.io/l1q0yhfbyy/Dominant/Prices/expiditing.png?updatedAt=1747044532765"
+    },
+    {
+      "id": "14",
+      "service": "Вывоз снега",
+      "price_without_discount": 400,
+      "price_with_discount": 300,
+      "description": "Рассчитать стоимость переезда с грузчиками в Екатеринбурге",
+      "img": "https://ik.imagekit.io/l1q0yhfbyy/Dominant/Prices/snowRemoval.png?updatedAt=1747044529510"
+    },
+    {
+      "id": "15",
+      "service": "Демонтажные работы",
+      "price_without_discount": 400,
+      "price_with_discount": 300,
+      "description": "Рассчитать стоимость переезда с грузчиками в Екатеринбурге",
+      "img": "https://ik.imagekit.io/l1q0yhfbyy/Dominant/Prices/dismantlingWorks.png?updatedAt=1747044528584"
+    },
+    {
+      "id": "16",
+      "service": "Разгрузка и погрузка",
+      "price_without_discount": 400,
+      "price_with_discount": 300,
+      "description": "Рассчитать стоимость переезда с грузчиками в Екатеринбурге",
+      "img": "https://ik.imagekit.io/l1q0yhfbyy/Dominant/Prices/unloadingLoading.png?updatedAt=1747044529021"
+    }
+  ],
+  "orders": [
+    {
+      "id": "1691",
+      "city": "Асбест",
+      "service": "Разгрузка стройматериалов",
+      "movers": 2,
+      "hours": 2,
+      "hasElevator": true,
+      "needCar": true,
+      "floor": 11,
+      "date": "24.03",
+      "time": "13:00",
+      "phone": "+7 900 000 00 00",
+      "price": 1400
+    },
+    {
+      "id": "c28c",
+      "city": "Асбест",
+      "service": "Грузчики-такелажники",
+      "movers": 2,
+      "hours": 2,
+      "hasElevator": true,
+      "needCar": true,
+      "floor": 11,
+      "date": "24.03",
+      "time": "13:00",
+      "phone": "+7 900 000 00 00",
+      "price": 1800
+    },
+    {
+      "id": "af58",
+      "city": "Асбест",
+      "service": "Грузчики-такелажники",
+      "movers": 2,
+      "hours": 2,
+      "hasElevator": true,
+      "needCar": true,
+      "floor": 11,
+      "date": "24.03",
+      "time": "13:00",
+      "phone": "+7 900 000 00 00",
+      "price": 1800
+    }
+  ],
+  "reviews": [
+    {
+      "id": "1",
+      "name": "Анастасия К.",
+      "city": "Сургут",
+      "rating": 5,
+      "review": "Обратилась в компанию «Доминант» для переезда в новую квартиру, и это был лучший выбор! Грузчики приехали точно в назначенное время, быстро разобрали и аккуратно упаковали мебель, уделили внимание каждому предмету. Особенно переживала за хрупкие вещи, но ребята учли все нюансы и доставили всё в идеальном состоянии. Подняли на этаж, помогли расставить вещи — сервис просто на высоте! Вежливые, профессиональные и ответственные специалисты. Буду рекомендовать всем знакомым!"
+    },
+    {
+      "id": "2",
+      "name": "Дмитрий С.",
+      "city": "Нижневартовск",
+      "rating": 5,
+      "review": "Нужно было срочно перевезти офис на новое место, и я очень рад, что выбрал «Доминант»! Вся работа была организована четко и профессионально: грузчики оперативно разобрали мебель, бережно упаковали оргтехнику, а после доставки всё собрали обратно. Работали быстро, но при этом очень аккуратно, без лишней суеты. Видно, что у ребят большой опыт. Отдельно отмечу вежливое отношение и готовность помочь в любом вопросе. Цена тоже приятно удивила. Если вам нужны надежные грузчики — смело обращайтесь в «Доминант»!"
+    },
+    {
+      "name": "Екатерина В.",
+      "city": "Нижний Тагил",
+      "rating": 5,
+      "review": "Заказывала грузчиков для перевозки мебели и техники. Всё сделали быстро и аккуратно, даже помогли с упаковкой некоторых вещей. Особенно порадовало, что сотрудники компании очень вежливые и дружелюбные. Вещи были доставлены без единой царапины, а это для меня очень важно. Также порадовала стоимость услуг — она оказалась вполне доступной по сравнению с конкурентами. Обязательно буду обращаться снова при необходимости!",
+      "id": "18ce"
+    },
+    {
+      "id": "3",
+      "name": "Марина С.",
+      "city": "Новосибирск",
+      "rating": 5,
+      "review": "Суперская команда! Заказывала грузчиков для переезда за город – всё прошло быстро и без проблем."
+    },
+    {
+      "id": "4",
+      "name": "Олег Т.",
+      "city": "Магнитогорск",
+      "rating": 5,
+      "review": "Срочно нужна была помощь с транспортировкой стройматериалов. Ребята выручили, благодарю!"
+    },
+    {
+      "id": "5",
+      "name": "Светлана Н.",
+      "city": "Курган",
+      "rating": 4,
+      "review": "В целом всё хорошо, грузчики вежливые и опытные. Немного задержались, но это не критично."
+    },
+    {
+      "id": "6",
+      "name": "Владимир Г.",
+      "city": "Озёрск",
+      "rating": 2,
+      "review": "Не совсем доволен сервисом. Грузчики опоздали на 40 минут, а один из них явно был не в лучшей форме. Надо следить за персоналом."
+    },
+    {
+      "id": "7",
+      "name": "Татьяна М.",
+      "city": "Пермь",
+      "rating": 1,
+      "review": "Очень разочарована. Вещи перевозили неаккуратно, кое-что повредили. Никто даже не извинился. Больше не обращусь."
+    }
+  ],
+  "feedback": [
+    {
+      "id": "bbcc",
+      "name": "import { GetData, PostData } from '../../../../fetchers/CRUD';",
+      "phone": "+7 900 000 00 00",
+      "message": "import { GetData, PostData } from '../../../../fetchers/CRUD';\nimport { GetData, PostData } from '../../../../fetchers/CRUD';\nimport { GetData, PostData } from '../../../../fetchers/CRUD';\nimport { GetData, PostData } from '../../../../fetchers/CRUD';\nimport { GetData, PostData } from '../../../../fetchers/CRUD';\nimport { GetData, PostData } from '../../../../fetchers/CRUD';\nimport { GetData, PostData } from '../../../../fetchers/CRUD';\nimport { GetData, PostData } from '../../../../fetchers/CRU",
+      "submittedAt": "2025-04-16T12:17:17.344Z"
+    }
+  ],
+  "autopark": [
+    {
+      "id": "1",
+      "name": "Газель тент «Стандарт»",
+      "price": "от 800 р/час",
+      "img": "https://ik.imagekit.io/l1q0yhfbyy/Cars/gazel.png?updatedAt=1746444436175",
+      "specifications": {
+        "loadCapacity": "2 тонны",
+        "length": "3 м",
+        "height": "2.5 м"
+      }
+    },
+    {
+      "id": "2",
+      "name": "Газель тент «Удлиненная»",
+      "price": "от 800 р/час",
+      "img": "https://ik.imagekit.io/l1q0yhfbyy/Cars/long.png?updatedAt=1746444436407",
+      "specifications": {
+        "loadCapacity": "2 тонны",
+        "length": "4 м",
+        "height": "2.5 м"
+      }
+    },
+    {
+      "id": "3",
+      "name": "Газель тент «Удлиненная»",
+      "price": "от 800 р/час",
+      "img": "https://ik.imagekit.io/l1q0yhfbyy/Cars/longer.png?updatedAt=1746444440924",
+      "specifications": {
+        "loadCapacity": "2 тонны",
+        "length": "5 м",
+        "height": "2.5 м"
+      }
+    },
+    {
+      "id": "4",
+      "name": "Газель Бортовая 4-6м",
+      "price": "от 800 р/час",
+      "img": "https://ik.imagekit.io/l1q0yhfbyy/Cars/gazelBort.png?updatedAt=1746444436421",
+      "specifications": {
+        "loadCapacity": "2 тонны",
+        "length": "6 м",
+        "height": "2.5 м"
+      }
+    },
+    {
+      "id": "5",
+      "name": "Газель с \"пирамидой\"",
+      "price": "от 800 р/час",
+      "img": "https://ik.imagekit.io/l1q0yhfbyy/Cars/gazelPiramid.png?updatedAt=1746444436319",
+      "specifications": {
+        "loadCapacity": "2 тонны",
+        "length": "3 м",
+        "height": "2.5 м"
+      }
+    },
+    {
+      "id": "6",
+      "name": "ГАЗон будка",
+      "price": "от 800 р/час",
+      "img": "https://ik.imagekit.io/l1q0yhfbyy/Cars/gazonBudka.png?updatedAt=1746444436421",
+      "specifications": {
+        "loadCapacity": "5 тонн",
+        "length": "5 м",
+        "height": "2.5 м"
+      }
+    },
+    {
+      "id": "7",
+      "name": "Самосвал Камаз 10м3",
+      "price": "от 800 р/час",
+      "img": "https://ik.imagekit.io/l1q0yhfbyy/Cars/kamaz10_3.png?updatedAt=1746444436464",
+      "specifications": {
+        "loadCapacity": "12 тонн",
+        "length": "5 м",
+        "height": "2.5 м"
+      }
+    },
+    {
+      "id": "8",
+      "name": "Самосвал Камаз 16м3",
+      "price": "от 800 р/час",
+      "img": "https://ik.imagekit.io/l1q0yhfbyy/Cars/kamaz16_3.png?updatedAt=1746444436424",
+      "specifications": {
+        "loadCapacity": "15 тонн",
+        "length": "6 м",
+        "height": "2.5 м"
+      }
+    },
+    {
+      "id": "9",
+      "name": "Самосвал MAN 20м3",
+      "price": "от 800 р/час",
+      "img": "https://ik.imagekit.io/l1q0yhfbyy/Cars/man20_3.png?updatedAt=1746444441060",
+      "specifications": {
+        "loadCapacity": "20 тонн",
+        "length": "8 м",
+        "height": "3 м"
+      }
+    },
+    {
+      "id": "10",
+      "name": "Газель рефрижератор 4м",
+      "price": "от 800 р/час",
+      "img": "https://ik.imagekit.io/l1q0yhfbyy/Cars/refri.png?updatedAt=1746444441141",
+      "specifications": {
+        "loadCapacity": "2 тонны",
+        "length": "4 м",
+        "height": "2 м"
+      }
+    },
+    {
+      "id": "11",
+      "name": "Погрузчик JCB ковш 1.2 м3",
+      "price": "от 800 р/час",
+      "img": "https://ik.imagekit.io/l1q0yhfbyy/Cars/pogrushik.png?updatedAt=1746444441081",
+      "specifications": {
+        "loadCapacity": "2 тонны",
+        "length": "3 м",
+        "height": "2.5 м"
+      }
+    },
+    {
+      "id": "12",
+      "name": "Минипогрузчик/бобкат JCB ковш 0.3м3",
+      "price": "от 600 р/час",
+      "img": "https://ik.imagekit.io/l1q0yhfbyy/Cars/miniPogrushik.png?updatedAt=1746444440912",
+      "specifications": {
+        "loadCapacity": "2 тонны",
+        "length": "2 м",
+        "height": "1.5 м"
+      }
+    },
+    {
+      "id": "13",
+      "name": "Газель фермер",
+      "price": "от 800 р/час",
+      "img": "https://ik.imagekit.io/l1q0yhfbyy/Cars/gazelFarmer.png?updatedAt=1746444436457",
+      "specifications": {
+        "capacity": "4-5чел/2тн",
+        "dimensions": "3м/2.5м",
+        "volume": "до 3т"
+      }
+    },
+    {
+      "id": "14",
+      "name": "Каблук",
+      "price": "от 800 р/час",
+      "img": "https://ik.imagekit.io/l1q0yhfbyy/Cars/kabluk.png?updatedAt=1746444436313",
+      "specifications": {
+        "capacity": "1чел/0.7тн",
+        "loadLimit": "до 500 кг"
+      }
+    },
+    {
+      "id": "15",
+      "name": "MAN фургон с гидробортом",
+      "price": "от 800 р/час",
+      "img": "https://ik.imagekit.io/l1q0yhfbyy/Cars/furgonManGidrobort.png?updatedAt=1746444436388",
+      "specifications": {
+        "capacity": "6м/2.5м/2м",
+        "loadLimit": "до 5т"
+      }
+    }
   ]
 }

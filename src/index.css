@@ -1,8 +1,31 @@
 @import "tailwindcss";
+
 @font-face {
   font-family: Manrope;
   font-style: normal;
   font-weight: 200 700;
   font-display: swap;
-  src: url("/public/fonts/manrope/Manrope-SemiBold.woff") format("woff2");
+  src: url("/fonts/manrope/Manrope-SemiBold.woff") format("woff2");
+}
+html, body {
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+/* В вашем CSS-файле */
+@keyframes slide-in {
+  from { transform: translateX(-100%); }
+  to { transform: translateX(0); }
+}
+
+.slide-in {
+  animation: slide-in 0.5s ease-out forwards;
+}
+/* File: styles.css */
+
+/* File: styles.css */
+
+/* styles.css */
+
+section {
+  opacity: 0;
+  transform: translateY(50px);
 }

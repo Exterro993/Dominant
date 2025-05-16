@@ -10,7 +10,6 @@ const Modal = ({ isOpen, onClose, children, showCloseButton = false, isDarkMode 
   useEffect(() => {
     if (isOpen) {
       setShouldRender(true);
-      // Анимация входа: прилёт сверху
       anime({
         targets: modalRef.current,
         translateY: ["-100%", "0%"],
@@ -18,7 +17,6 @@ const Modal = ({ isOpen, onClose, children, showCloseButton = false, isDarkMode 
         easing: "easeOutExpo",
         duration: 300,
       });
-      // Анимация для фона
       anime({
         targets: backdropRef.current,
         opacity: [0, 1],
@@ -26,7 +24,6 @@ const Modal = ({ isOpen, onClose, children, showCloseButton = false, isDarkMode 
         duration: 300,
       });
     } else if (shouldRender) {
-      // Анимация выхода: уход вниз
       anime({
         targets: modalRef.current,
         translateY: ["0%", "100%"],
@@ -50,7 +47,7 @@ const Modal = ({ isOpen, onClose, children, showCloseButton = false, isDarkMode 
 
   return (
     <div
-      className="fixed inset-0 flex items-center justify-center z-50"
+      className="fixed  inset-0 flex items-center justify-center z-50"
       onClick={onClose}
     >
       <div
@@ -60,8 +57,7 @@ const Modal = ({ isOpen, onClose, children, showCloseButton = false, isDarkMode 
       ></div>
       <div
         ref={modalRef}
-        // Используем CSS-переменные для фона и цвета текста.
-        className="p-6 rounded-lg max-w-md w-full mx-4 shadow-lg relative z-10 bg-[var(--bg-light)] text-[var(--text-light)] bg-[url('/public/background.png')] bg-no-repeat bg-[0%_20%] bg-[length:360px_80px]"
+        className="p-6 rounded-lg max-w-md w-full mx-4 shadow-lg relative z-40 bg-[var(--bg-light)] text-[var(--text-light)] bg-[url('/public/background.png')] bg-no-repeat bg-[0%_20%] bg-[length:360px_80px]"
         onClick={(e) => e.stopPropagation()}
         style={{ opacity: 0 }}
       >
@@ -115,7 +111,7 @@ const ModalsWrapper = ({ onClose, isDarkMode }) => {
             Наш менеджер перезвонит в течении минуты и проконсультирует по всем
             вопросам
           </p>
-          <MyForm handleFirstConfirm={handleFirstConfirm} />
+          <MyForm handleFirstConfirm={handleFirstConfirm} isModal={true} />
           <div className="flex justify-end gap-2">
             <button
               className="px-4 py-2 text-gray-500 hover:text-gray-700"

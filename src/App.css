@@ -1,27 +1,44 @@
 @import "tailwindcss";
-
+@custom-variant dark (&:where(.dark, .dark *));
 .popup-background {
   background-size: cover;
   background-position: center;
   filter: blur(8px);
 }
-
 :root {
+  --bg-light: #ffffff;
+  --text-light: #212121;
   --bg-dark: #212121;
-  --text-dark: #fff;
-  --bg-light: #fff;
-  --text-light: #5a5a5a;
-  --heading-color: #000; 
+  --text-dark: #ffffff;
 }
 
 .dark {
   --bg-light: var(--bg-dark);
   --text-light: var(--text-dark);
-  --heading-color: #000;
 }
 
-body {
+html, body {
   background-color: var(--bg-light);
   color: var(--text-light);
-  transition: background-color 0.3s, color 0.3s;
+  transition: background-color 0.5s ease, color 0.5s ease;
 }
+/* В вашем CSS-файле */
+@keyframes slide-in {
+  from { transform: translateX(-100%); }
+  to { transform: translateX(0); }
+}
+
+.slide-in {
+  animation: slide-in 0.5s ease-out forwards;
+}
+/* File: styles.css */
+
+/* File: styles.css */
+
+/* styles.css */
+
+section {
+  opacity: 0;
+  transform: translateY(50px);
+}
+

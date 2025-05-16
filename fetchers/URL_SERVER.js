@@ -1,0 +1,10 @@
+export const pricesUrl = `http://localhost:5500/prices`;
+export const FullpricesUrl = `http://localhost:5500/pricesFull`;
+export const cities_URL = `http://localhost:5500/cities`;
+export const URL_SHOP = `http://localhost:5500/shop`
+export const orders = `http://localhost:5500/orders`
+export const reviews = `http://localhost:5500/reviews`
+export const vacancies_URL = `http://localhost:5500/vacancies`
+export const feedback = `http://localhost:5500/feedback`
+export const autopark_URL = `http://localhost:5500/autopark`
+export const newsUrl = `http://localhost:5500/news`
