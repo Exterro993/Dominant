@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router";
 
 const NewsCompany = () => {
   const today = new Date();
@@ -16,16 +17,16 @@ const NewsCompany = () => {
               Новости <br />
               компании
             </h4>
-            <button className="text-[#FFF] px-16 py-3 bg-[#014DF5] rounded-[10px]">
+            <Link to="/news" className="cursor-pointer text-[#FFF] px-16 py-3 bg-[#014DF5] rounded-[10px]">
               Читать все
-            </button>
+            </Link>
           </div>
-          <div className="flex items-center justify-center">
+          <div className="flex items-center justify-center flex-wrap">
 
           
           <div className="rounded-lg overflow-hidden w-[360px] font-[Manrope] p-4">
             <div className="relative">
-              <img src="https://ik.imagekit.io/l1q0yhfbyy/newsimg.png?updatedAt=1746445046795" className="w-full rounded-2xl h-full" alt="newsImg" />
+              <img src="https://ik.imagekit.io/l1q0yhfbyy/Dominant/newsimg.png?updatedAt=1747647796367" className="w-full rounded-2xl h-full" alt="newsImg" />
               <div className="absolute  bg-white/70 top-[190px] text-[#014DF5]  rounded text-sm">
                 {date}
               </div>
@@ -51,13 +52,13 @@ const NewsCompany = () => {
                 </svg>
                 {views}
               </div>
-              <button className="text-[#014DF5] underline cursor-pointer">Читать далее </button>
+              <Link to="/news" className="text-[#014DF5] underline cursor-pointer">Читать далее </Link>
             </div>
           </div>
           <div></div>
           <div className="rounded-lg overflow-hidden w-[360px]  font-[Manrope] p-4">
             <div className="relative">
-              <img src="https://ik.imagekit.io/l1q0yhfbyy/newsimg.png?updatedAt=1746445046795" className="w-full h-full" alt="newsImg" />
+              <img src="https://ik.imagekit.io/l1q0yhfbyy/Dominant/newsimg.png?updatedAt=1747647796367" className="w-full h-full" alt="newsImg" />
               <div className="absolute  bg-white/70 top-[190px] text-[#014DF5]  rounded text-sm">
                 {date}
               </div>
@@ -83,7 +84,7 @@ const NewsCompany = () => {
                 </svg>
                 {views}
               </div>
-              <button className="text-[#014DF5] underline cursor-pointer">Читать далее </button>
+              <Link to="/news" className="text-[#014DF5] underline cursor-pointer">Читать далее </Link>
             </div>
           </div>
           </div>

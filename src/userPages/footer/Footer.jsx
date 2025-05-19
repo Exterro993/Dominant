@@ -70,7 +70,7 @@ const Footer = () => {
   return (
     <section className="font-[Manrope]">
       <footer className=" p-6">
-        <div className="max-w-6xl mx-auto flex justify-between">
+        <div className="max-w-6xl mx-auto lg:flex justify-center items-center flex-wrap">
           {/* Left column - Company info */}
           <div className="flex flex-col space-y-4">
             <div className="mb-4">
@@ -107,14 +107,14 @@ const Footer = () => {
 
             <button
               onClick={() => setShowModals(true)}
-              className="bg-[#014DF5] px-5 py-2 rounded-lg text-white max-[1024px]:hidden hover:shadow-[4px_4px_8px_13px_rgba(21,93,252,0.2)] cursor-pointer ease-out duration-500"
+              className="bg-[#014DF5]  px-5 py-2 rounded-lg text-white  hover:shadow-[4px_4px_8px_13px_rgba(21,93,252,0.2)] cursor-pointer ease-out duration-500"
             >
               Заказать звонок
             </button>
           </div>
 
           {/* Middle section */}
-          <div className="mx-8">
+          <div className="mx-8 hidden lg:block">
             <h2 className="text-blue-600 font-bold text-xl mb-4">УСЛУГИ</h2>
 
             <div className="grid grid-cols-3 gap-x-12 gap-y-2">
@@ -167,7 +167,7 @@ const Footer = () => {
           </div>
 
           {/* Right column - Payment methods */}
-          <div>
+          <div className="hidden lg:block">
             <h2 className="text-blue-600 font-bold text-xl mb-4">
               СПОСОБЫ ОПЛАТЫ:
             </h2>
@@ -195,8 +195,8 @@ const Footer = () => {
           </div>
         </div>
 
-        {showModals && <ModalsWrapper onClose={() => setShowModals(false)} />}
       </footer>
+      {showModals && <ModalsWrapper onClose={() => setShowModals(false)} />}
     </section>
   );
 };
