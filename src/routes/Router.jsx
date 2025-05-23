@@ -5,12 +5,12 @@ import ServicesComponent from "../userPages/services/ServicesComponent";
 import AutoPark from "../userPages/autopark/AutoPark";
 import Labourers from "../userPages/labourers/Labourers";
 import LabourersCard from "../userPages/labourers/components/LabourersCard";
-import Contacts from "../userPages/Contacts/Contacts";
 import Vacancies from "../userPages/Vacancies/Vacancies";
 import About from "../userPages/About/About";
 import CompanyNews from "../userPages/news/CompanyNews";
 import More from "../userPages/more/More";
 import NewsDetail from "../userPages/news/components/NewsDetail";
+import Contacts from "../userPages/contacts/Contacts";
 
 export const route = [
   {
