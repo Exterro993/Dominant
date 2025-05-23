@@ -5,7 +5,7 @@ import ServicesComponent from "../userPages/services/ServicesComponent";
 import AutoPark from "../userPages/autopark/AutoPark";
 import Labourers from "../userPages/labourers/Labourers";
 import LabourersCard from "../userPages/labourers/components/LabourersCard";
-import Vacancies from "../userPages/Vacancies/Vacancies";
+import Vacancies from "../userPages/vacancies/Vacancies.jsx";
 import About from "../userPages/About/About";
 import CompanyNews from "../userPages/news/CompanyNews";
 import More from "../userPages/more/More";
